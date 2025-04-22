@@ -1,12 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/5544999999999', '_blank');
   };
 
   return (
@@ -21,10 +19,11 @@ const Hero = () => {
             Defendendo seus direitos com dedicação e excelência.
           </p>
           <Button 
-            onClick={scrollToContact}
-            className="bg-white text-[#1A1F2C] hover:bg-gray-200 text-lg px-8 py-6 rounded-lg transition-all"
+            onClick={handleWhatsAppClick}
+            className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-6 rounded-lg transition-all flex items-center gap-2"
           >
-            Agende uma Consulta Gratuita
+            <Phone className="h-5 w-5" />
+            Fale Conosco no WhatsApp
           </Button>
         </div>
       </div>

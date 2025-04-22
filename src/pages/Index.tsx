@@ -3,17 +3,17 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-16">
+      <Navbar />
       <Hero />
-      <About />
-      <Services />
-      <Testimonials />
-      <ContactForm />
+      <div id="about"><About /></div>
+      <div id="services"><Services /></div>
+      <div id="testimonials"><Testimonials /></div>
       <Footer />
     </div>
   );
