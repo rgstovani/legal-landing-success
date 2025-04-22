@@ -16,13 +16,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-[#1A1F2C] z-50">
+    <div className="fixed top-0 left-0 right-0 bg-[#2C3E50] z-50">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         <NavigationMenu className="py-4">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink
-                className={navigationMenuTriggerStyle() + " text-white hover:text-gray-200"}
+                className={navigationMenuTriggerStyle() + " text-gray-100 hover:bg-[#34495E] hover:text-white"}
                 onClick={() => scrollToSection("about")}
               >
                 Sobre
@@ -30,7 +30,7 @@ const Navbar = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                className={navigationMenuTriggerStyle() + " text-white hover:text-gray-200"}
+                className={navigationMenuTriggerStyle() + " text-gray-100 hover:bg-[#34495E] hover:text-white"}
                 onClick={() => scrollToSection("services")}
               >
                 Serviços
@@ -38,7 +38,7 @@ const Navbar = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                className={navigationMenuTriggerStyle() + " text-white hover:text-gray-200"}
+                className={navigationMenuTriggerStyle() + " text-gray-100 hover:bg-[#34495E] hover:text-white"}
                 onClick={() => scrollToSection("testimonials")}
               >
                 Depoimentos

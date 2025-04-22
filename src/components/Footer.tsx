@@ -1,5 +1,12 @@
 
+import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
+
 const Footer = () => {
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/5544999999999', '_blank');
+  };
+
   return (
     <footer className="bg-[#1A1F2C] text-white py-12 px-4 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto">
@@ -42,7 +49,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p>&copy; 2024 Dr. João Silva - Todos os direitos reservados</p>
+          <p className="mb-4">&copy; 2024 Dr. João Silva - Todos os direitos reservados</p>
+          <Button 
+            onClick={handleWhatsAppClick}
+            className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-6 rounded-lg transition-all flex items-center gap-2 mx-auto"
+          >
+            <Phone className="h-5 w-5" />
+            Entre em Contato Agora
+          </Button>
         </div>
       </div>
     </footer>
